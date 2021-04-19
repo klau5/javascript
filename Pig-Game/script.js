@@ -61,7 +61,7 @@ btnRoll.addEventListener('click', function () {
       // add dice to current score
       currentScore += dice;
       document.getElementById(
-        `current--${activePlayer}`
+	`current--${activePlayer}`
       ).textContent = currentScore;
     } else {
       // switch to next player
@@ -82,11 +82,11 @@ btnHold.addEventListener('click', function () {
       playing = false;
       diceEl.classList.add('hidden');
       document
-        .querySelector(`.player--${activePlayer}`)
-        .classList.add('player--winner');
+	.querySelector(`.player--${activePlayer}`)
+	.classList.add('player--winner');
       document
-        .querySelector(`.player--${activePlayer}`)
-        .classList.remove('player--active');
+	.querySelector(`.player--${activePlayer}`)
+	.classList.remove('player--active');
     } else {
       // switch to next player
       switchPlayer();
